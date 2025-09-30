@@ -4,24 +4,14 @@ class Program
 {
     static void Main()
     {
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("Автор: Александр Сергеевич Пушкин\n");
+        Console.Write("Введите радиус окружности: ");
+        double R = double.Parse(Console.ReadLine());
 
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Название: Я помню чудное мгновенье\n");
+        double squareArea = 2 * R * R;
 
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("Я помню чудное мгновенье:");
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Передо мной явилась ты,");
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("Как мимолётное виденье,");
-        Console.ForegroundColor = ConsoleColor.Purple;
-        Console.WriteLine("Как гений чистой красоты.");
+        double triangleArea = (3 * Math.Sqrt(3) / 4) * R * R;
 
-        Console.ResetColor();
-
-        Console.WriteLine("\nНажмите любую клавишу для выхода...");
-        Console.ReadKey();
+        Console.WriteLine($"Площадь вписанного квадрата: {squareArea:F2}");
+        Console.WriteLine($"Площадь вписанного правильного треугольника: {triangleArea:F2}");
     }
 }
