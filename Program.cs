@@ -17,7 +17,7 @@ class Program
         Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine("Как мимолётное виденье,");
         Console.ForegroundColor = ConsoleColor.Purple;
-        Console.WriteLine("Как гений чистой красоты.");
+        Console.WriteLine("Как гений чистой красоты..");
 
         Console.ResetColor();
 
