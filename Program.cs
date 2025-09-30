@@ -10,6 +10,7 @@ class Program
         double squareArea = 2 * R * R;
 
         double triangleArea = (3 * Math.Sqrt(3) / 4) * R * R;
+        //p
 
         Console.WriteLine($"Площадь вписанного квадрата: {squareArea:F2}");
         Console.WriteLine($"Площадь вписанного правильного треугольника: {triangleArea:F2}");
