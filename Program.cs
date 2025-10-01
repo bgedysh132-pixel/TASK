@@ -4,14 +4,22 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Введите радиус окружности: ");
-        double R = double.Parse(Console.ReadLine());
+        Console.Write("Введите четырёхзначное число: ");
+        int n = int.Parse(Console.ReadLine());
 
-        double squareArea = 2 * R * R;
+        if (n < 1000 || n > 9999)
+        {
+            Console.WriteLine("Ошибка: нужно ввести именно четырёхзначное число.");
+            return;
+        }
 
-        double triangleArea = (3 * Math.Sqrt(3) / 4) * R * R;
+        int d1 = n / 1000;
+        int d2 = (n / 100) % 10;
+        int d3 = (n / 10) % 10;
+        int d4 = n % 10;
 
-        Console.WriteLine($"Площадь вписанного квадрата: {squareArea:F2}");
-        Console.WriteLine($"Площадь вписанного правильного треугольника: {triangleArea:F2}");
+        int x = d2 * 1000 + d1 * 100 + d4 * 10 + d3;
+
+        Console.WriteLine("Результат: " + x);
     }
 }
