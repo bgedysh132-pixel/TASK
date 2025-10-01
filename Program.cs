@@ -23,3 +23,4 @@ class Program
         Console.WriteLine("Результат: " + x);
     }
 }
+//p
