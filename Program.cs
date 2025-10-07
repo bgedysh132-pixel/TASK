@@ -4,22 +4,33 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Введите четырёхзначное число: ");
-        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine("Программа для вычисления функции y = √(sinx - sin2x - sin3x - sin4x)");
+        Console.Write("Введите значение x: ");
 
-        if (n < 1000 || n > 9999)
+        double x = double.Parse(Console.ReadLine());
+
+        double result = CalculateFunction(x);
+
+        Console.WriteLine($"f({x}) = {result}");
+    }
+
+    static double CalculateFunction(double x)
+    {
+        double sinx = Math.Sin(x);
+        double sin2x = Math.Sin(2 * x);
+        double sin3x = Math.Sin(3 * x);
+        double sin4x = Math.Sin(4 * x);
+
+        double expression = sinx - sin2x - sin3x - sin4x;
+
+        if (expression < 0)
         {
-            Console.WriteLine("Ошибка: нужно ввести именно четырёхзначное число.");
-            return;
+            Console.WriteLine("Внимание: выражение под корнем отрицательное!");
+            return double.NaN;
         }
 
-        int d1 = n / 1000;
-        int d2 = (n / 100) % 10;
-        int d3 = (n / 10) % 10;
-        int d4 = n % 10;
+        double result = Math.Sqrt(expression);
 
-        int x = d2 * 1000 + d1 * 100 + d4 * 10 + d3;
-
-        Console.WriteLine("Результат: " + x);
+        return result;
     }
 }
