@@ -25,7 +25,7 @@ class Program
 
         if (expression < 0)
         {
-            Console.WriteLine("Внимание: выражение под корнем отрицательное!");
+            Console.WriteLine("Внимание: выражение под корнем отрицательное!!");
             return double.NaN;
         }
 
