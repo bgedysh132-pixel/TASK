@@ -5,7 +5,7 @@ class Program
     static void Main()
     {
 
-        Console.Write("Введите значение x: ");
+        Console.Write("Введите значение x:: ");
 
         double x = double.Parse(Console.ReadLine());
 
