@@ -12,5 +12,6 @@ class Program
         double x = y(3, 2) * y(2, 4) * y(7, 5);
 
         Console.WriteLine($"x = {x:F3}");
+        //o
     }
 }
