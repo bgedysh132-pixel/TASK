@@ -23,6 +23,7 @@ namespace Task09
                 return x * x;
             else
                 return 3 * x * x - x;
+            //p
         }
     }
 }
