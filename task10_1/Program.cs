@@ -14,6 +14,7 @@ namespace TaskPowerTable
             {
                 double kW = hp * kWPerHp;
                 Console.WriteLine($"{hp}\t{kW:F4}");
+                //p
             }
         }
     }
