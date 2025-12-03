@@ -25,6 +25,7 @@ namespace TaskRainfall
 
             Console.WriteLine(
                 $"Среднемесячное количество осадков за {month} равно {average:F2}");
+            //p
         }
     }
 }
