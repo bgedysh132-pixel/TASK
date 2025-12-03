@@ -21,6 +21,7 @@ namespace Task10_3
             }
 
             Console.WriteLine($"Наименьшая сумма S_n > a равна {sum}, при n = {n}");
+            //p
         }
     }
 }
