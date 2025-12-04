@@ -29,6 +29,7 @@ namespace Task10_4
             }
 
             Console.WriteLine($"Знак меняется {signChanges} раз(а).");
+            //p
         }
     }
 }
