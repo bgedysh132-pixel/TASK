@@ -29,6 +29,7 @@ namespace Task10_5
             }
 
             Console.WriteLine($"Результат после удаления цифр {k}: {resultReversed}");
+            //p
         }
     }
 }
