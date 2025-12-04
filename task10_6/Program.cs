@@ -34,6 +34,7 @@ namespace task10_6
 
             Console.WriteLine(
                 $"Минимальное число с максимальным количеством делителей на отрезке [{a}; {b}] — {bestNumber} (делителей: {maxDivisors}).");
+            //p
         }
     }
 }
