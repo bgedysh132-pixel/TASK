@@ -31,5 +31,6 @@ class Program
         };
 
         PrintRowsSquaresSum(arr);
+        //p
     }
 }
