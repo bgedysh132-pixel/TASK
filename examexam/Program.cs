@@ -84,5 +84,6 @@ class Program
 
         Console.WriteLine("Программа завершена.");
         Console.ReadKey();
+        //p
     }
 }
