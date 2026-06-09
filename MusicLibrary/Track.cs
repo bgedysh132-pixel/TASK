@@ -4,7 +4,6 @@ namespace MusicLibrary
 {
     public class Track
     {
-        
         public string Title { get; set; }
         public string Artist { get; set; }
         public int ReleaseYear { get; set; }
@@ -16,15 +15,8 @@ namespace MusicLibrary
         
         public Track(string title, string artist, int releaseYear, string album, int trackNumber, string author, TrackGenre genre)
         {
-            
             if (string.IsNullOrWhiteSpace(title))
                 throw new ArgumentException("Название трека не может быть пустым.");
-
-            if (releaseYear < 1860 || releaseYear > DateTime.Now.Year + 1)
-                throw new ArgumentException("Указан некорректный год выпуска.");
-
-            if (trackNumber <= 0)
-                throw new ArgumentException("Номер трека в альбоме должен быть больше 0.");
 
             Title = title;
             Artist = artist;
@@ -35,7 +27,6 @@ namespace MusicLibrary
             Genre = genre;
         }
 
-        
         public virtual string[] GetInfo()
         {
             var info = new string[2];
