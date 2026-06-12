@@ -16,7 +16,7 @@ namespace MusicLibrary
             FormationYear = formationYear;
 
             if (formationYear > DateTime.Now.Year || formationYear < 1800)
-                throw new ArgumentException("Некорректный год образования группы."); //
+                throw new ArgumentException("Некорректный год образования группы.");
         }
 
         

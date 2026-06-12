@@ -9,7 +9,7 @@ namespace MusicLibrary
         public Performer(string country)
         {
             if (string.IsNullOrWhiteSpace(country))
-                throw new ArgumentException("Страна не может быть пустой.");
+                throw new ArgumentException("Страна не может быть пустой."); //
 
             Country = country;
         }

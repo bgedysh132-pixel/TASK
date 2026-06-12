@@ -8,7 +8,7 @@ namespace MusicLibrary
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
 
-        public SoloPerformer(string country, string firstName, string lastName, string birthDate)
+        public SoloPerformer(string country, string firstName, string lastName, string birthDate) //
             : base(country)
         {
             FirstName = firstName;

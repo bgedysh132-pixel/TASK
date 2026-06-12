@@ -9,7 +9,7 @@ namespace MusicLibrary
         HipHop,
         Jazz,
         Classical,
-        Electronic,
+        Electronic, //
         Metal,
         Other
     }

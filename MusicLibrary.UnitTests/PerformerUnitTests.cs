@@ -45,7 +45,7 @@ namespace MusicLibrary.UnitTests
             Assert.That(info.Length, Is.EqualTo(2));
             
             Assert.That(info[0], Is.EqualTo("Linkin Park - In the End"));
-            Assert.That(info[1], Is.EqualTo("Альбом: Hybrid Theory (№8), Год: 2000, Жанр: Rock, Автор(ы): Linkin Park."));
+            Assert.That(info[1], Is.EqualTo("Альбом: Hybrid Theory (№8), Год: 2000, Жанр: Rock, Автор(ы): Linkin Park.")); //
         }
     }
 }

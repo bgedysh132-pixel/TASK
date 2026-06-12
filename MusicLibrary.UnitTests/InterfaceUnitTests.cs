@@ -32,7 +32,7 @@ namespace MusicLibrary.UnitTests
         {
             var user = new User("music_fan", "fan@example.com", "1111-2222-3333-4444", "securePass1");
             Performer band = new Band("США", "Linkin Park", new[] { "Chester" }, 1996);
-            var track = new Track("In the End", band, 2000, "Hybrid Theory", 8, "LP", TrackGenre.Rock);
+            var track = new Track("In the End", band, 2000, "Hybrid Theory", 8, "LP", TrackGenre.Rock); //
 
             user.BuyTrack(track);
 
