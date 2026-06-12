@@ -21,7 +21,7 @@ namespace MusicLibrary
         public User(string login, string email, string cardNumber, string password)
         {
             if (string.IsNullOrWhiteSpace(login)) throw new ArgumentException("Логин не может быть пустым.");
-            if (string.IsNullOrWhiteSpace(email)) throw new ArgumentException("E-mail не может быть пустым.");
+            if (string.IsNullOrWhiteSpace(email)) throw new ArgumentException("E-mail не может быть пустым."); //
 
             Login = login;
             Email = email;
@@ -32,7 +32,7 @@ namespace MusicLibrary
 
         public void BuyTrack(Track track)
         {
-            if (track == null) throw new ArgumentNullException(nameof(track), "Трек не может быть null."); //
+            if (track == null) throw new ArgumentNullException(nameof(track), "Трек не может быть null.");
             _purchasedTracks.Add(track);
         }
 
