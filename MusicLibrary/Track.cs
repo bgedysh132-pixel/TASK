@@ -15,7 +15,7 @@ namespace MusicLibrary
         public string Author { get; set; }
         public TrackGenre Genre { get; set; }
 
-        public Track(string title, Performer artist, int releaseYear, string album, int trackNumber, string author, TrackGenre genre)
+        public Track(string title, Performer artist, int releaseYear, string album, int trackNumber, string author, TrackGenre genre) //
         {
             if (string.IsNullOrWhiteSpace(title))
                 throw new ArgumentException("Название трека не может быть пустым.");
